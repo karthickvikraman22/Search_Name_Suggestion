@@ -10,7 +10,7 @@ function App() {
   const [clikedData, setClickedData] = useState('')
 
   useEffect(() => {
-    axios.get('https://dummyjson.com/users?limit=60')
+    axios.get('https://dummyjson.com/users?limit=100')
       .then((res) => (
         setUsers(res.data.users.map(user => user.firstName))
       ))
